@@ -1,0 +1,66 @@
+body {
+    overflow: hidden;
+    display: none;
+    background-color: transparent;
+}
+
+.siec-na-ryby img {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    margin-top: 60px;
+    transform: rotate(-20deg);
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ryby {
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.ryba {
+    background-image: url('ryba.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100%;
+    ;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+    height: 200px;
+    display: inline-flex;
+    width: 160px;
+    margin-left: 10=px;
+    margin-top: 80px;
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+
+h1 {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+a {
+    color: #B6024E
+}
