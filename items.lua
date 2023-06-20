@@ -1,4 +1,4 @@
-Item wedki :
+--items
  ['wedka'] = {
   label = 'Wędka',
   weight = 1500,
@@ -7,8 +7,6 @@ Item wedki :
    event = "fisher:startfish"
   },
  },
-
-Item ryby :
  ['ciernik'] = {
   label = 'Ciernik',
   weight = 1500,
