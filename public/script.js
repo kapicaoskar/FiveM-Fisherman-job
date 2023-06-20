@@ -1,6 +1,6 @@
 $(document).ready(function () {
-  var hitStartTime = 0;
-  var maxHitTime = 2000;
+  let hitStartTime = 0;
+  let maxHitTime = 2000;
 
   Draggable.create(".ryba", {
     type: "x,y",
@@ -15,10 +15,10 @@ $(document).ready(function () {
   function startCount() {
     if (Draggable.hitTest(".ryba", ".siecka")) {
       if (Date.now() - hitStartTime > maxHitTime) {
-        $.post("https://metro-fisherman/zamknij", JSON.stringify({}));
+        $.post(`https://${GetParentResourceName()}/zamknij`, JSON.stringify({}));
         location.reload();
 
-        $.post("https://metro-fisherman/sukces", JSON.stringify({}));
+        $.post(`https://${GetParentResourceName()}/sukces`, JSON.stringify({}));
         hitStartTime = 0;
       } else {
         TweenLite.delayedCall(0.2, startCount);
@@ -39,7 +39,7 @@ $(document).ready(function () {
     document.onkeyup = function (data) {
       if (data.which == 27) {
         location.reload();
-        $.post("https://metro-fisherman/zamknij", JSON.stringify({}));
+        $.post(`https://${GetParentResourceName()}/zamknij`, JSON.stringify({}));
       }
     };
   });
